@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        
+        .login {
+            width: 500px;
+            margin: 200px auto auto auto;
+            text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class = "login">
+        <h1 class = "title">로그인</h1>
+        <hr>
+        아이디 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="userid"><br>
+        비밀번호 &nbsp;&nbsp; <input type="password" id="userpw">
+        <br>
+        <br>
+        <input type="button" value="로그인" id="signin">
+        <input type="button" value="취소">
+        
+    </div>
+</body>
+<script type="text/javascript">
+var signin = document.getElementById("signin")
+    signin.addEventListener('click', signinFunc)
+
+    function signinFunc () {
+      var userid = document.getElementById("userid").value;
+      
+      if(userid == "") {
+        alert("아이디를 입력해주세요");
+      }
+    }
+</script>
+</html>
